@@ -71,7 +71,8 @@ public class RedisLockManager extends AtomicLockManager {
         } catch (Exception e) {
             logger.error("jedis", e);
         } finally {
-            jedisPool.returnResource(jedis);
+            jedis.close();
+            //jedisPool.returnResource(jedis);
         }
         return false;
     }
@@ -112,7 +113,8 @@ public class RedisLockManager extends AtomicLockManager {
         } catch (Exception e) {
             logger.error("jedis", e);
         } finally {
-            jedisPool.returnResource(jedis);
+            jedis.close();
+            //jedisPool.returnResource(jedis);
         }
         return false;
     }
@@ -149,7 +151,8 @@ public class RedisLockManager extends AtomicLockManager {
         } catch (Exception e) {
             logger.error("jedis", e);
         } finally {
-            jedisPool.returnResource(jedis);
+            jedis.close();
+            //jedisPool.returnResource(jedis);
         }
         return false;
     }
@@ -181,7 +184,8 @@ public class RedisLockManager extends AtomicLockManager {
         } catch (Exception e) {
             logger.error("jedis", e);
         } finally {
-            jedisPool.returnResource(jedis);
+            jedis.close();
+            //jedisPool.returnResource(jedis);
         }
         return false;
     }
@@ -223,7 +227,8 @@ public class RedisLockManager extends AtomicLockManager {
         } catch (Exception e) {
             logger.error("jedis", e);
         } finally {
-            jedisPool.returnResource(jedis);
+            jedis.close();
+            //jedisPool.returnResource(jedis);
         }
         return false;
     }
