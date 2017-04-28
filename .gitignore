@@ -10,3 +10,17 @@
 .idea/compiler.xml
 
 *.xml
+
+*.class
+
+*.class
+
+*.class
+
+target/classes/com/yunsheng/xlock/MyTest.class
+
+target/classes/com/yunsheng/xlock/MyXLockEventListener.class
+
+target/classes/com/yunsheng/xlock/Xlock.class
+
+*.iml
